@@ -3131,7 +3131,29 @@ repositories:
       url: https://github.com/ros-controls/ros2_control.git
       version: master
     status: developed
-  ros2_controllers:
+  ros2_control_demos:
+    doc:
+      type: git
+      url: https://github.com/ros-controls/ros2_control_demos.git
+      version: master
+    release:
+      packages:
+      - ros2_control_demo_bringup
+      - diffbot_description
+      - rrbot_description
+      - ros2_control_demo_hardware
+      - ros2_control_demos
+      - ros2_control_test_nodes
+      tags:
+        release: release/galactic/{package}/{version}
+      url: https://github.com/razr/ros2_control_demos-release.git
+      version: 0.0.0-1
+    source:
+      type: git
+      url: https://github.com/ros-controls/ros2_control_demos.git
+      version: master
+    status: developed
+ros2_controllers:
     doc:
       type: git
       url: https://github.com/ros-controls/ros2_controllers.git
